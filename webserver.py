@@ -49,7 +49,7 @@ def update_data():
             img.save(output, format="png")
             data['image'] = base64.b64encode(output.getvalue()).decode()
             classification_result = classifyImage(interpreter, img_inference)
-            data['label'] = labels[classification_result[0].id]
+            data['label'] = f'{labels[classification_result[0].id]}, Score: {classification_result[0].score}'
             print(f'Label: {labels[classification_result[0].id]}, Score: {classification_result[0].score}')
             print(classification_result)
             #if classification_result [0][0] == 0 and  classification_result[0][1] > 0.95:
