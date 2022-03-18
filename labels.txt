@@ -1,0 +1,5 @@
+0 Cardboard Box
+1 PP Box
+2 LDPE Bag
+3 nothing
+4 human hand
